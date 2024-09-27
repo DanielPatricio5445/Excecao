@@ -1,0 +1,64 @@
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//ystem.out.println("Olá!");
+		//String nome = "Ale";
+		Scanner scan = new Scanner(System.in);
+		Estudante pedro = new Estudante();
+		pedro.matricula = 123456;
+		pedro.nome = "Pedrão";
+		pedro.curso = "DSM";
+		pedro.aprovacao = true;
+		
+		System.out.println(pedro.nome);
+		System.out.println(pedro.curso);
+		pedro.estudarMateria();
+		
+		Estudante maria = new Estudante();
+		maria.matricula = 654321;
+		maria.nome = "Mariazinha";
+		maria.curso = "ADS";
+		maria.aprovacao = false;
+		
+		System.out.println(maria.nome);
+		System.out.println(maria.curso);
+		maria.realizarProva();
+		
+		
+		System.out.println("Abaixo escreva o valor 1:");
+		double num1 = scan.nextDouble();
+		System.out.println("Abaixo escreva o valor 2:");
+		double num2 = scan.nextDouble();
+		Calculadora calc = new Calculadora();
+		
+		System.out.println("Opção - 1 - SOma");
+		System.out.println("Opção - 2 - Subtração");
+		System.out.println("Opção - 3 - Multiplição");
+		System.out.println("Opção - 4 - Divisão");
+		System.out.println("Abaixo escreva a opção que desejar");
+		int n;
+		n = scan.nextInt();
+		
+		switch (n) {
+		
+		case 1:
+		
+		System.out.println(calc.soma(num1,num2));
+		break; 
+		case 2:
+		System.out.println(calc.subtracao(num1,num2));
+		break;
+		case 3:
+		System.out.println(calc.multiplicacao(num1, num2));
+		break;
+		case 4:
+		System.out.println(calc.divisao(num1, num2));
+		break;
+		}
+		
+		
+	}
+
+}

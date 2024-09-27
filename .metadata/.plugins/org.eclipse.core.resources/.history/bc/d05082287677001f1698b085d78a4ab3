@@ -1,0 +1,13 @@
+package br.edu.fatecpg.veiculos.model;
+
+public class Caminhao extends Veiculo {
+	
+	public int tamanho;
+	public String carga;
+	public int peso;
+	
+	
+	
+	
+
+}

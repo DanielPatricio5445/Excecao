@@ -1,0 +1,19 @@
+package br.edu.fatecpg.veiculos.model;
+
+public class Moto extends Veiculo {
+	public int tamanho; 
+	public int peso;
+	public double velocidade;
+	
+	public void Caminhao(String mod, String mrc, int ano, String cor, int t, int p, double v)
+	{
+		super(mod,mrc,ano,cor);
+		this.tamanho = t;
+		this.velocidade = v;
+		this.peso = p;
+	}
+	public void Derrapar() {
+		System.out.println("Derapando...");
+	}
+	
+}

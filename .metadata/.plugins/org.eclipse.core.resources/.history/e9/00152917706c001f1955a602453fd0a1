@@ -1,0 +1,19 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Olá!");
+		//String nome = "Ale";
+		Estudante pedro = new Estudante();
+		pedro.matricula = 123456;
+		pedro.nome = "Pedrão";
+		pedro.curso = "DSM";
+		pedro.aprovacao = true;
+		
+		System.out.println(pedro.nome);
+		System.out.println(pedro.curso);
+		
+	}
+
+}

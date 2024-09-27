@@ -1,0 +1,20 @@
+package br.edu.fatecpg.veiculos.model;
+
+public class Caminhao extends Veiculo {
+	
+	public int tamanho;
+	public String carga;
+	public int peso;
+	
+	public void Caminhao(String mod, String mrc, int ano, String cor, int t, String c, int p)
+	{
+		super(mod,mrc,ano,cor);
+		this.tamanho = t;
+		this.carga = c;
+		this.peso = p;
+	}
+	public void Carregar() {
+		System.out.println("Carregando...");
+	}
+
+}

@@ -1,0 +1,20 @@
+
+public class Girafa {
+	public String altura;
+	public double peso;
+	public int idade;
+	
+	public Girafa(String metros, double pesoQUalquer)
+	{
+		this.altura = metros;
+		this.peso = pesoQualquer;
+		this.idade = 0;
+	}
+	
+	public void comer()
+	{
+		System.out.println("Comendo...");
+		System.out.println("COmeu");
+	}
+
+}

@@ -1,0 +1,21 @@
+package br.edu.fatecpg.produto.view;
+
+public static void main(String[] args) {
+    Produto produto = new Produto("Produto A", 50.0, 10);
+
+    
+    System.out.println("Nome: " + produto.getNome());
+    System.out.println("Preço: " + produto.getPreco());
+    System.out.println("Quantidade em estoque: " + produto.getQuantidadeEstoque());
+
+   
+    produto.setPreco(-10.0);  
+    produto.setQuantidadeEstoque(-5);  
+ 
+    produto.setPreco(75.0);
+    produto.setQuantidadeEstoque(20);
+
+    System.out.println("Preço atualizado: " + produto.getPreco());
+    System.out.println("Quantidade em estoque atualizada: " + produto.getQuantidadeEstoque());
+}
+

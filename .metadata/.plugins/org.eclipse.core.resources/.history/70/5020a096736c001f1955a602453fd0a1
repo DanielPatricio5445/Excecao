@@ -1,0 +1,20 @@
+
+public class Calculadora {
+	
+	public void soma() {
+		System.out.println("A soma de 1+1 é = " + 2);
+	}
+	public int subtracao() {
+		return 2-1;
+	}
+	public void multiplicacao(int num1, int num2)
+	{
+		System.out.println("Multiplição é:" + (num1 * num2));
+	}
+	public double divisao(double num1, double num2)
+	{
+		
+		return num1/num2;
+		
+	}
+}
